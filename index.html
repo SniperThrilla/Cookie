@@ -29,6 +29,16 @@
                 </th>
             </table>
         </div>
+        <div id="Categories">
+            <table>
+                <th id="Padding">
+                    <a onclick="upgradesTab()" id="UpgradesText">UPGRADES</a>
+                </th>
+                <th id="Padding">
+                    <a onclick="multiplierTab()" id="MultiplierText">MULTIPLIERS</a>
+                </th>
+            </table>
+        </div>
         <div id="Upgrades">
             <table id="UpgradeTable">
                 <th id="UpgradeTh">Upgrades</th>
@@ -54,10 +64,84 @@
                     <td><a onclick="buyFarm()">Buy</a></td>
                 </tr>
                 <tr>
-                    <td>Mine (+100 CPS)</td>
+                    <td>Mine (+50 CPS)</td>
                     <td id="MineAmount">0</td>
                     <td id="MineCost">10000</td>
                     <td><a onclick="buyMine()">Buy</a></td>
+                </tr>
+                <tr>
+                    <td>Factory (+150 CPS)</td>
+                    <td id="FactoryAmount">0</td>
+                    <td id="FactoryCost">100000</td>
+                    <td><a onclick="buyFactory()">Buy</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Multipliers">
+            <table id="MultiplierTable">
+                <th id="UpgradeTh">Type</th>
+                <th id="UpgradeTh">Benefit</th>
+                <th id="UpgradeTh">Cost</th>
+                <th id="UpgradeTh">Buy</th>
+                <tr id="Clicker1">
+                    <td>Clicker</td>
+                    <td>2X BOOST</td>
+                    <td>1500</td>
+                    <td><a onclick="buyMultiClicker(1);remove('Clicker1')">Buy</a></td>
+                </tr>
+                <tr id="Grandma1">
+                    <td>Grandma</td>
+                    <td>2X BOOST</td>
+                    <td>15000</td>
+                    <td><a onclick="buyMultiGrandma(1);remove('Grandma1')">Buy</a></td>
+                </tr>
+                <tr id="Farm1">
+                    <td>Farm</td>
+                    <td>2X BOOST</td>
+                    <td>150000</td>
+                    <td><a onclick="buyMultiFarm(1);remove('Farm1')">Buy</a></td>
+                </tr>
+                <tr id="Mine1">
+                    <td>Mine</td>
+                    <td>2X BOOST</td>
+                    <td>1500000</td>
+                    <td><a onclick="buyMultiMine(1);remove('Mine1')">Buy</a></td>
+                </tr>
+                <tr id="Factory1">
+                    <td>Factory</td>
+                    <td>2X BOOST</td>
+                    <td>15000000</td>
+                    <td><a onclick="buyMultiFactory(1);remove('Factory1')">Buy</a></td>
+                </tr>
+                <tr id="Clicker2">
+                    <td>Clicker</td>
+                    <td>2X BOOST</td>
+                    <td>3000</td>
+                    <td><a onclick="buyMultiClicker(2);remove('Clicker2')">Buy</a></td>
+                </tr>
+                <tr id="Grandma2">
+                    <td>Grandma</td>
+                    <td>2X BOOST</td>
+                    <td>30000</td>
+                    <td><a onclick="buyMultiGrandma(2);remove('Grandma2')">Buy</a></td>
+                </tr>
+                <tr id="Farm2">
+                    <td>Farm</td>
+                    <td>2X BOOST</td>
+                    <td>300000</td>
+                    <td><a onclick="buyMultiFarm(2);remove('Farm2')">Buy</a></td>
+                </tr>
+                <tr id="Mine2">
+                    <td>Mine</td>
+                    <td>2X BOOST</td>
+                    <td>3000000</td>
+                    <td><a onclick="buyMultiMine(2);remove('Mine2')">Buy</a></td>
+                </tr>
+                <tr id="Factory2">
+                    <td>Factory</td>
+                    <td>2X BOOST</td>
+                    <td>30000000</td>
+                    <td><a onclick="buyMultiFactory(2);remove('Factory2')">Buy</a></td>
                 </tr>
             </table>
         </div>

@@ -108,3 +108,88 @@ td {
 #Stats {
     width:100%
 }
+
+#Categories {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    color: floralwhite;
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 20%;
+}
+
+#Padding {
+    padding:20px;
+}
+
+#UpgradesText:hover {
+    color: antiquewhite;
+}
+
+#MultiplierText:hover {
+    color: antiquewhite;
+}
+
+#Multipliers {
+    position:absolute;
+    right:5%;
+    top:15%;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 40%;
+    display: none;
+}
+
+#MultiplierTable {
+    border: 2px solid yellow;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.ThStyle {
+    width:33%;
+}
+
+#Grandma1 {
+    display: none;
+}
+
+#Farm1 {
+    display: none;
+}
+
+#Mine1 {
+    display: none;
+}
+
+#Factory1 {
+    display: none;
+}
+
+#Clicker1 {
+    display: none;
+    width: 100%;
+}
+
+#Mine2 {
+    display: none;
+}
+
+#Factory2 {
+    display: none;
+}
+
+#Farm2 {
+    display: none;
+}
+
+#Grandma2 {
+    display: none;
+}
+
+#Clicker2 {
+    display: none;
+}
