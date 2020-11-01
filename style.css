@@ -4,12 +4,13 @@ body {
 
 #Cookie {
     position:absolute;
-    left:5%;
+    left:7%;
     top:10%;
 }
 
 #CookieImage {
-    width:40%;
+    width:35%;
+    animation: rotation 15s infinite linear;
 }
 #CookieImage:active {
     transition: all 0.2s ease-in-out;
@@ -30,6 +31,7 @@ body {
     font-family: sans-serif;
     font-size: 30px;
     width: 40%;
+    height: 70%;
 }
 
 td {
@@ -192,4 +194,24 @@ td {
 
 #Clicker2 {
     display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+#SecretImage {
+    width:10%;
+    height:10%;
+    position: absolute;
+    top:50%;
+    left: 30%;
+    background-color: aliceblue; 
+    z-index: 5;
 }

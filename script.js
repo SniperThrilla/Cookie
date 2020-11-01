@@ -21,6 +21,7 @@ var grandmaBonus = 1;
 var farmBonus = 1;
 var mineBonus = 1;
 var factoryBonus = 1;
+var speedBoolean = false;
 
 function sleep(milliseconds) {
   var date = Date.now();
@@ -35,6 +36,20 @@ function CPS() {
     current = Math.round(current*100);
     current = current/100;
     return current;
+}
+
+//Easter egg
+
+function speed() {
+    console.log("Yes");
+    if(speedBoolean == false) {
+        speedBoolean = true;
+        document.getElementById("CookieImage").style.animation = "rotation 0.1s infinite linear";
+    }
+    else {
+        speedBoolean = false;
+        document.getElementById("CookieImage").style.animation = "rotation 15s infinite linear";
+    }
 }
 
 //Click cookie
