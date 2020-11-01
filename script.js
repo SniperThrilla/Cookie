@@ -127,18 +127,33 @@ function clickMultiply() {
 }
 
 function goldCookie() {
-    superClick = Math.floor(Math.random()*750);
-    document.getElementById("GoldenCookie").style.display = "none";
-    document.getElementById("GoldenText").style.display = "block";
-    document.getElementById("GoldenText").innerHTML = "CLICK FRENZY!";
-    document.getElementById("ClickPower").innerHTML = "Click Power: " + clickMultiply()*superClick + "x";
-    document.getElementById("ClickPower").style.color = "aquamarine";
-    setTimeout(function hideCookie() {
-        superClick = 1;
-        document.getElementById("GoldenText").style.display = "none";
+    option = Math.floor(Math.random()*2);
+    if(option == 0) {
+        superClick = Math.floor(Math.random()*100);
+        document.getElementById("GoldenCookie").style.display = "none";
+        document.getElementById("GoldenText").style.display = "block";
+        document.getElementById("GoldenText").innerHTML = "CLICK FRENZY!";
         document.getElementById("ClickPower").innerHTML = "Click Power: " + clickMultiply()*superClick + "x";
-        document.getElementById("ClickPower").style.color = "whitesmoke";
-    }, 10000);
+        document.getElementById("ClickPower").style.color = "aquamarine";
+        setTimeout(function hideCookie() {
+            superClick = 1;
+            document.getElementById("GoldenText").style.display = "none";
+            document.getElementById("ClickPower").innerHTML = "Click Power: " + clickMultiply()*superClick + "x";
+            document.getElementById("ClickPower").style.color = "whitesmoke";
+        }, 10000);
+    }
+    else {
+        bonus = currentCPS*Math.floor(Math.random()*5000)+500;
+        bonus = Math.floor(bonus);
+        document.getElementById("GoldenText").style.display = "block";
+        document.getElementById("GoldenText").innerHTML = "INSTANT BONUS! (" + bonus + " COOKIES)!";
+        cookieCount = cookieCount + bonus;
+        cookieCount = Math.floor(cookieCount);
+        document.getElementById("CookieCount").innerHTML = "Current Cookies: " + cookieCount;
+        setTimeout(function hideText() {
+            document.getElementById("GoldenText").style.display = "none";
+        }, 5000)
+    }
 }
 
 setInterval(function showGoldenCookie() {
