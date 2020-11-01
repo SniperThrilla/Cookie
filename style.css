@@ -1,0 +1,110 @@
+body {
+    background-image:url(Background.jpg);
+}
+
+#Cookie {
+    position:absolute;
+    left:5%;
+    top:10%;
+}
+
+#CookieImage {
+    width:40%;
+}
+#CookieImage:active {
+    transition: all 0.2s ease-in-out;
+    transform:scale(0.92,0.92)
+}
+
+#CookieCount {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#Upgrades {
+    position:absolute;
+    right:5%;
+    top:15%;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 40%;
+}
+
+td {
+    border: 2px solid yellow;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#CookieCPS {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 0%;
+}
+
+#Count {
+    position:absolute;
+    left:10%;
+    top:75%;
+    width: 100%
+}
+
+#ClickPower {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 28%;
+}
+
+#TotalClicks {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 20px; 
+    position: absolute;
+    left: 56%;
+}
+
+#GoldenCookie {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    z-index: 1;
+    display: none;
+}
+
+#GoldenText {
+    color:aquamarine;
+    font-family: cursive;
+    font-size: 50px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 10%;
+    display: none;
+}
+
+
+
+#UpgradeTable {
+    border: 2px solid yellow;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+#UpgradeTh {
+    border: 2px solid yellow;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#Stats {
+    width:100%
+}

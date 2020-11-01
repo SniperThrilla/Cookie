@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <img src="GoldCookie.png" onclick="goldCookie()" id="GoldenCookie">
+            <p id="GoldenText">
+                CLICK FRENZY!
+            </p>
+        </div>
+        <div id="Cookie">
+            <img src="Cookie.png" onclick="addCookie()" id="CookieImage">
+        </div>
+        <div id="Count">
+            <p id="CookieCount">
+                Current Cookies: 0
+            </p>
+            <table id="Stats">
+                <th id="CookieCPS">
+                    Current CPS: 0
+                </th>
+                <th id="ClickPower">
+                    Click Power: 1x
+                </th>
+                <th id="TotalClicks">
+                    Total Clicks: 0
+                </th>
+            </table>
+        </div>
+        <div id="Upgrades">
+            <table id="UpgradeTable">
+                <th id="UpgradeTh">Upgrades</th>
+                <th id="UpgradeTh">Current Amount</th>
+                <th id="UpgradeTh">Cost</th>
+                <th id="UpgradeTh">Buy</th>
+                <tr>
+                    <td>Clicker (+0.1 CPS)</td>
+                    <td id="ClickerAmount">0</td>
+                    <td id="ClickerCost">10</td>
+                    <td><a onclick="buyClicker()">Buy</a></td>
+                </tr>
+                <tr>
+                    <td>Grandma (+1 CPS)</td>
+                    <td id="GrandmaAmount">0</td>
+                    <td id="GrandmaCost">100</td>
+                    <td><a onclick="buyGrandma()">Buy</a></td>
+                </tr>
+                <tr>
+                    <td>Farm (+10 CPS)</td>
+                    <td id="FarmAmount">0</td>
+                    <td id="FarmCost">1000</td>
+                    <td><a onclick="buyFarm()">Buy</a></td>
+                </tr>
+                <tr>
+                    <td>Mine (+100 CPS)</td>
+                    <td id="MineAmount">0</td>
+                    <td id="MineCost">10000</td>
+                    <td><a onclick="buyMine()">Buy</a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
